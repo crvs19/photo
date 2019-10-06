@@ -1,0 +1,27 @@
+include pug/mixins
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width")
+		meta(name="description" content="")
+
+		title Photography
+		link(rel="stylesheet" href=`./css/main.css?v=${Date.now()}`)
+		link(href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Trirong:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet")
+
+	body
+		include pug/blocks/header-block
+		include pug/blocks/info-block
+		include pug/blocks/clients-block
+		include pug/blocks/portfolio-block
+		include pug/blocks/blog-block
+		include pug/blocks/inputs-block
+		include pug/blocks/footer-block
+
+		script(src=`./js/vendor.js?v=${Date.now()}`)
+		script(src=`./js/main.js?v=${Date.now()}`)
+		script(src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
+		script(src="https://yastatic.net/share2/share.js")

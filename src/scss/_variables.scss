@@ -1,0 +1,35 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+// COLORS
+
+$color-black: #000;
+$color-white: #fff;
+$color-white-2: #fefeff;
+
+$blue-font: #5d5f84;
+$blue-font-2: #9293ac;
+$blue-font-3: #373657;
+$blue-button: #2b2d5c;
+$portfolio-details: #f2c200;
+
+
+
+// MEDIA
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 922px;
+$screen-xl: 1280px;
+$screen-initial: 1600px;
+
+// FONTS
+
+@mixin font-muli {
+    font-family: 'Muli', sans-serif;
+    }
+@mixin font-trirong {
+    font-family: 'Trirong', serif;
+    }
+@mixin font-myriadpro {
+    font-family: 'Myriad Pro';
+    }

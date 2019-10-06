@@ -1,0 +1,86 @@
+.clients {
+    max-width: $screen-initial;
+    margin: 0 auto;
+    height: 300px;
+    background: $blue-button;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url('/images/backgrounds/clines.png') no-repeat 50% 50%;
+        left: 0;
+        bottom: 0;
+        width: 40%;
+        height: 100%;
+        z-index: 10;
+    }
+
+    & img {
+        height: 100%;
+        width: 100%;
+        opacity: 0.2;
+        position: absolute;
+    }
+}
+
+.title {
+    @include font-trirong;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 300;
+    color: $color-white;
+    margin: 70px 0 20px 0;
+}
+
+.brands {
+    width: 73.75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__item {
+
+        &:nth-child(1){
+            & svg {
+                width: 170px;
+                height: auto;
+            }
+        }
+        &:nth-child(2){
+            & svg {
+                width: 170px;
+                height: auto;
+            }
+        }
+        &:nth-child(3){
+            & svg {
+                width: 137px;
+                height: auto;
+            }
+        }
+        &:nth-child(4){
+            & svg {
+                width: 200px;
+                height: auto;
+            }
+        }
+        &:nth-child(5){
+            & svg {
+                width: 110px;
+                height: auto;
+            }
+        }
+        &:nth-child(6){
+            & svg {
+                width: 115px;
+                height: auto;
+            }
+        }
+    }
+}

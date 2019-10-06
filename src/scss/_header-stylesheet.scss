@@ -1,3 +1,4 @@
+//===wrapper===//
 .header-background{
     background: url("../images/backgrounds/header-bg-shapes.jpg") no-repeat 50% 50%;
     background-size: cover;
@@ -7,6 +8,7 @@
     position: relative;
 }
 
+//===main===//
 .header {
     width: 73.125%;
     height: 100%;
@@ -15,6 +17,8 @@
     display: flex;
     flex-direction: column;
 }
+
+//===logo===//
 .header-logo {
     & a {
         & svg {
@@ -25,6 +29,8 @@
         }
     }
 }
+
+//===navbar===//
 .header-navigation {
     width: 100%;
     display: flex;
@@ -38,7 +44,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 28.20513%;
+        width: 28.2%;
 
         & li {
             text-align: center;
@@ -60,6 +66,7 @@
     }
 }
 
+//===intro-text===//
 .header-introduction {
     padding: 265px 0 135px 0;
     color: $color-white;
@@ -96,6 +103,7 @@
     }
 }
 
+//===scroller===//
 .header-scroll {
     background: transparent;
     outline: none;
@@ -114,30 +122,12 @@
     }
 }
 
+//===social-links===//
 .header-links {
-    width: 12.82051%;
-    height: 25px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    @include social-links;
     position: absolute;
     right: 5%;
     bottom: 30px;
-
-    & a {
-        & svg {
-            fill: $color-white;
-            width: 25px;
-            height: 25px;
-            transition: .3s;
-        }
-
-        &:hover {
-
-            & svg {
-                fill: #f2c200;
-            }
-        }
-    }
+    width: 170px;
+    height: 25px;
 }

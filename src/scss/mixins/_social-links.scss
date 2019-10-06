@@ -1,0 +1,23 @@
+
+@mixin social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & a {
+        & svg {
+            fill: $color-white;
+            width: 25px;
+            height: 25px;
+            transition: .3s;
+        }
+
+        &:hover {
+
+            & svg {
+                fill: #f2c200;
+            }
+        }
+    }
+}

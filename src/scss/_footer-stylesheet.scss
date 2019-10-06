@@ -1,0 +1,213 @@
+//===wrapper===//
+.footer {
+    @include font-muli;
+    color: $color-white;
+    max-width: $screen-initial;
+    height: 450px;
+    background: $blue-default;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-container {
+        width: 73.4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+//===contact-section===//
+.footer-container-contacts {
+    margin: 80px 0 0 0;
+
+    &__contact {
+
+        & h3 {
+            font-size: 20px;
+            line-height: 38px;
+            font-weight: 700;
+            margin: 24px 0 10px 0;
+
+        }
+        & p {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+    &__social {
+        & h3 {
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 700;
+            margin: 35px 0 12px 0;
+        }
+    }
+}
+
+//===social-links===//
+.footer-links {
+    @include social-links;
+    width: 120px;
+    height: 20px;
+    & a {
+        & svg {
+            fill: $color-white;
+            width: 20px;
+            height: 20px;
+            transition: .3s;
+        }
+    }
+}
+
+//===blog-section===//
+.footer-container-blog {
+    margin: 50px 0 0 0;
+
+    &__title {
+        font-size: 24px;
+        line-height: 50px;
+        font-weight: 300;
+    }
+    &__item {
+        display: flex;
+        flex-direction: row;
+        max-width: 370px;
+        height: 70px;
+        margin: 26px 0 26px 0;
+
+        .textblock{
+            display: flex;
+            flex-direction: column;
+
+            &__text {
+                width: 275px;
+                margin: 0 0 0 28px;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 300;
+            }
+            &__blog-date {
+                @include blog-date;
+                margin: 6px 0 0 28px;
+            }
+        }
+    }
+    &__link {
+        color: $color-white;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        text-decoration: none;
+        outline: none;
+        margin: 0;
+        transition: .3s;
+            &:hover {
+                color: $blue-font-2;
+            }
+    }
+}
+.blog-link {
+    @include footer-image-hover;
+}
+
+//===footer_navigation===//
+.footer-container-navigation {
+    &__title {
+        font-size: 24px;
+        line-height: 50px;
+        font-weight: 300;
+        margin: 75px 0 28px 0;
+    }
+    &__navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 60px;
+        height: 136px;
+
+        & li {
+            text-align: center;
+            height: 25px;
+            list-style: none;
+            transition: .3s;
+
+            & a {
+                text-decoration: none;
+                color: $color-white;
+                padding: 0 5px 8px 5px;
+                outline: none;
+            }
+
+            &:hover {
+                border: 1px solid #ffcc00;
+            }
+        }
+    }
+}
+
+//===instagram-section===//
+.footer-container-instagram {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 300;
+        margin: 80px 0 20px 0;
+    }
+    &__images {
+        width: 200px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .insta-link {
+            @include footer-image-hover;
+        }
+
+        .image-row-1 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .image-column  {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .image-row-2 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+//===copyright===//
+.footer-copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-top: 3px solid #41426d;
+    margin: 30px 0 0 0;
+
+    & p {
+        font-size: 14px;
+        line-height: 38px;
+        font-weight: 200;
+        color: #53557b;
+    }
+}

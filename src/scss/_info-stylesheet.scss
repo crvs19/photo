@@ -1,3 +1,4 @@
+//===wrapper===//
 .information {
     max-width: $screen-initial;
     height: 930px;
@@ -6,6 +7,8 @@
     display: flex;
     flex-direction: row;
 }
+
+//===image-left===//
 .image-wrapper {
     width: 32.1875%;
     height: 730px;
@@ -29,6 +32,7 @@
     top: -40px;
 }
 
+//===info-content===//
 .content-wrapper {
     width: 67.8125%;
     height: 570px;
@@ -115,7 +119,7 @@
     font-size: 14px;
     line-height: 76px;
     font-weight: 700;
-    background: $blue-button;
+    background: $blue-default;
     color: $color-white-2;
     text-decoration: none;
 

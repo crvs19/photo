@@ -10,10 +10,25 @@
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: $screen-xl) {
+        width: 1280px;
+        height: 400px; 
+    }
+    @media (max-width: $screen-lg) {
+        width: 922px;
+    }
+    @media (max-width: $screen-md) {
+        width: 768px; 
+    }
+    @media (max-width: $screen-sm) {
+        width: 576px; 
+        height: 700px;
+    }
+
     &::before {
         content: '';
         position: absolute;
-        background: url('/images/backgrounds/clines.png') no-repeat 50% 50%;
+        background: url('../images/backgrounds/clines.png') no-repeat 50% 50%;
         left: 0;
         bottom: 0;
         width: 40%;
@@ -26,6 +41,10 @@
         width: 100%;
         opacity: 0.2;
         position: absolute;
+
+        @media (max-width: $screen-sm) {
+            opacity: 0;
+        }
     }
 }
 
@@ -37,6 +56,10 @@
     font-weight: 300;
     color: $color-white;
     margin: 70px 0 20px 0;
+
+    @media (max-width: $screen-xl) {
+        margin: 40px 0 15px 0;
+    }
 }
 
 //===brands-icons===//
@@ -46,6 +69,22 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: $screen-xl) {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    @media (max-width: $screen-lg) {
+        width: 80%;
+    }
+
+    @media (max-width: $screen-sm) {
+        flex-direction: column;
+    }
+
+    @media (max-width: $screen-sm) {
+        width: 100%;
+    }
 
     &__item {
 

@@ -82,7 +82,7 @@
 
             &::before {
                 content: '';
-                background: url('/images/backgrounds/cardhovercross.png') no-repeat center $blue-default;;
+                background: url('../images/backgrounds/cardhovercross.png') no-repeat center $blue-default;;
                 width: 100%;
                 height: 100%;
                 opacity: 0.5;
@@ -226,7 +226,7 @@
         }
     }
     &__share {
-        background: url('/images/sprites/png/share.png') no-repeat 50% 50%;
+        background: url('../images/sprites/png/share.png') no-repeat 50% 50%;
         background-size: cover;
         width: 16px;
         height: 16px;

@@ -6,6 +6,20 @@
     height: 900px;
     margin: 0 auto;
     position: relative;
+
+    @media (max-width: $screen-xl) {
+        width: 1280px; 
+    }
+    @media (max-width: $screen-lg) {
+        width: 922px;
+        height: 700px; 
+    }
+    @media (max-width: $screen-md) {
+        width: 768px; 
+    }
+    @media (max-width: $screen-sm) {
+        width: 576px; 
+    }
 }
 
 //===main===//
@@ -16,6 +30,10 @@
     padding: 70px 0 0 0;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $screen-sm) {
+        width: 90%;
+    }
 }
 
 //===logo===//
@@ -40,11 +58,23 @@
     position: relative;
     height: 25px;
 
+    @media (max-width: $screen-md) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     &__navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 28.2%;
+
+        @media (max-width: $screen-xl) {
+            margin-right: 10%;
+        }
+        @media (max-width: $screen-md) {
+            padding-top: 5%;
+        }
 
         & li {
             text-align: center;
@@ -68,18 +98,30 @@
 
 //===intro-text===//
 .header-introduction {
+    @include font-muli;
     padding: 265px 0 135px 0;
     color: $color-white;
-    @include font-muli;
+
+    @media (max-width: $screen-lg) {
+        padding: 125px 0 135px 0;
+    }
 
     &__title {
-        width: 38.46154%;
+        width: 38.46%;
         @include font-trirong;
         font-weight: 300;
         font-size: 60px;
         line-height: 72px;
         margin: 0;
         padding: 0;
+
+        @media (max-width: $screen-lg) {
+            width: 50%;
+        }
+        @media (max-width: $screen-md) {
+            font-size: 40px;
+            line-height: 55px;
+        }
     }
     &__subtitle {
         padding: 35px 0 40px 0;
@@ -99,6 +141,9 @@
 
         &:hover {
             background: #8d939c;
+        }
+        @media (max-width: $screen-md) {
+            padding: 10px 35px 10px 35px;
         }
     }
 }
@@ -130,4 +175,11 @@
     bottom: 30px;
     width: 170px;
     height: 25px;
+    
+    @media (max-width: $screen-xl) {
+        right: 14%; 
+    }
+    @media (max-width: $screen-sm) {
+        left: 5%;
+    }
 }

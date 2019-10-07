@@ -20,6 +20,24 @@
         left: 10;
         top: -337px;
         z-index: -2;
+
+        @media (max-width: $screen-lg) {
+            display: none;
+        }
+    }
+    @media (max-width: $screen-xl) {
+        width: 1280px;
+    }
+    @media (max-width: $screen-lg) {
+        width: 922px;
+        align-items: flex-start;
+    }
+    @media (max-width: $screen-md) {
+        width: 768px; 
+    }
+    @media (max-width: $screen-sm) {
+        width: 576px; 
+        height: 820px;
     }
 }
 
@@ -31,6 +49,19 @@
     justify-content: space-between;
     height: 865px;
     width: 28.1%;
+    @media (max-width: $screen-lg) {
+        width: 50%;
+        margin-left: 24%;
+    }
+    @media (max-width: $screen-md) {
+        width: 60%;
+        margin-left: 18%;
+        height: 830px;
+    }
+    @media (max-width: $screen-sm) {
+        margin-left: 10%; 
+        height: 780px;
+    }
 }
 .blog-intro {
     width: 470px;
@@ -47,10 +78,14 @@
     }
     &__text {
         text-align: center;
+        width: 98%;
         font-size: 20px;
         line-height: 34px;
         font-weight: 300;
         margin: 40px 0 65px 0;
+        @media (max-width: $screen-sm) {
+            width: 90%;
+        }
     }
 }
 
@@ -63,6 +98,9 @@
     width: 92.1875%;
     position: absolute;
 
+    @media (max-width: $screen-lg) {
+        display: none;
+    }
 
     &__item {
         width: 30.5%;
@@ -74,7 +112,7 @@
             height: 270px;
         }
         &__title {
-            width: 390px;
+            width: 86.67%;
             margin: 15px 0 0 35px;
             font-size: 20px;
             line-height: 30px;
@@ -85,11 +123,14 @@
             margin: 17px 0 13px 35px;
         }
         &__text {
-            width: 390px;
+            width: 86.67%;
             margin: 5px 0 10px 35px;
             font-size: 16px;
             line-height: 28px;
             font-weight: 300;
+            @media (max-width: $screen-sm) {
+                display: none;
+            }
         }
         &__link {
             margin: 0 0 0 35px;
@@ -119,10 +160,14 @@
         & a {
             outline: none;
         }
+        @media (max-width: $screen-sm) {
+            height: 490px;
+        }
     }
 }
 .item-central {
     width: 100%;
     background: $color-white;
     box-shadow: 0 0 70px 5px rgba(59,61,104,0.5);
+
 }

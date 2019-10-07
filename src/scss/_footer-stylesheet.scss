@@ -3,7 +3,6 @@
     @include font-muli;
     color: $color-white;
     max-width: $screen-initial;
-    height: 450px;
     background: $blue-default;
     margin: 0 auto;
     display: flex;
@@ -15,12 +14,31 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        @media (max-width: $screen-xl) {
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-evenly;
+        }
+    }
+    @media (max-width: $screen-xl) {
+        width: 1280px;
+    }
+    @media (max-width: $screen-lg) {
+        width: 922px;
+    }
+    @media (max-width: $screen-md) {
+        width: 768px; 
+    }
+    @media (max-width: $screen-sm) {
+        width: 576px; 
     }
 }
 
 //===contact-section===//
 .footer-container-contacts {
     margin: 80px 0 0 0;
+    width: 250px;
 
     &__contact {
 
@@ -66,6 +84,7 @@
 //===blog-section===//
 .footer-container-blog {
     margin: 50px 0 0 0;
+    width: 420px;
 
     &__title {
         font-size: 24px;
@@ -116,6 +135,7 @@
 
 //===footer_navigation===//
 .footer-container-navigation {
+    width: 165px;
     &__title {
         font-size: 24px;
         line-height: 50px;
@@ -154,6 +174,7 @@
 .footer-container-instagram {
     display: flex;
     flex-direction: column;
+    width: 270px;
 
     &__title {
         font-size: 24px;

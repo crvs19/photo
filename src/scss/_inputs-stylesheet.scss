@@ -115,16 +115,16 @@
     }
 
     @media (max-width: $screen-xl) {
-        width: 1280px;
+        max-width: 1280px;
     }
     @media (max-width: $screen-lg) {
-        width: 922px;
+        max-width: 922px;
     }
     @media (max-width: $screen-md) {
-        width: 768px; 
+        max-width: 768px; 
     }
     @media (max-width: $screen-sm) {
-        width: 576px; 
+        max-width: 576px; 
         align-items: flex-start;
         height: 430px;
     }

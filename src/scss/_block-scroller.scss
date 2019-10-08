@@ -1,0 +1,32 @@
+//===block-scroller===//
+.block-scroller {
+    background: transparent;
+    height: 35px;
+    width: 35px;
+    border-radius: 0 0 50% 50%;
+    left: 50%;
+    bottom: 80px;
+    z-index: 10;
+    position: relative;
+
+    & a {
+        outline: none;
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        border-radius: 0 0 50% 50%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('../images/sprites/png/scrolldown.png') no-repeat 50% 50%;
+            z-index: 11;
+        }
+
+        &:hover {
+            background: #8d939c;
+        }
+    }
+}

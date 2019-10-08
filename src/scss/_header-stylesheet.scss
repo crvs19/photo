@@ -8,17 +8,17 @@
     position: relative;
 
     @media (max-width: $screen-xl) {
-        width: 1280px; 
+        max-width: 1280px; 
     }
     @media (max-width: $screen-lg) {
-        width: 922px;
+        max-width: 922px;
         height: 700px; 
     }
     @media (max-width: $screen-md) {
-        width: 768px; 
+        max-width: 768px; 
     }
     @media (max-width: $screen-sm) {
-        width: 576px; 
+        max-width: 576px; 
     }
 }
 
@@ -125,6 +125,12 @@
         font-weight: 200;
         font-size: 20px;
         line-height: 32px;
+
+        @media (max-width: 430px) {
+            font-size: 14px;
+            line-height: 24px;
+            padding: 20px 0 20px 0;
+        }
     }
     &__button {
         @include button-default;
@@ -143,25 +149,6 @@
     }
     @media (max-width: $screen-lg) {
         padding: 125px 0 135px 0;
-    }
-}
-
-//===scroller===//
-.header-scroll {
-    background: transparent;
-    outline: none;
-    border: none;
-    height: 35px;
-    width: 35px;
-    border-radius: 0 0 50% 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    transition: .3s;
-
-    &:hover {
-        background: #8d939c;
     }
 }
 

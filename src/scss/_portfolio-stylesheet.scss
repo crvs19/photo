@@ -8,19 +8,19 @@
     padding: 100px 0 225px 0;
 
     @media (max-width: $screen-xl) {
-        width: 1280px;
+        max-width: 1280px;
         flex-direction: column;
         padding: 50px 0 165px 0;
     }
     @media (max-width: $screen-lg) {
-        width: 922px;
+        max-width: 922px;
         padding: 50px 0 80px 0;
     }
     @media (max-width: $screen-md) {
-        width: 768px; 
+        max-width: 768px; 
     }
     @media (max-width: $screen-sm) {
-        width: 576px; 
+        max-width: 576px; 
     }
 }
 
@@ -72,6 +72,9 @@
         @media (max-width: $screen-sm) {
             margin: 16px 0 15px 50px;
         }
+        @media (max-width: 400px) {
+            display: none;
+        }
     }
     & a {
         @include font-myriadpro;
@@ -92,12 +95,15 @@
     
     @media (max-width: $screen-xl) {
         margin: 0 auto;
-        width: 80.6%;
+        width: 90%;
         height: 400px;
     }
     @media (max-width: $screen-sm) {
-        width: 70%;
+        width: 95%;
         margin-left: 3%;
+    }
+    @media (max-width: 400px) {
+        height: 100px;;
     }
 }
 
@@ -183,12 +189,12 @@
     }
     
     @media (max-width: $screen-xl) {
-        width: 80.6%;
+        width: 90%;
         margin: 0 auto;
     }
     @media (max-width: $screen-sm) {
-        width: 70%;
-        margin-left: 3%;
+        width: 95%;
+        margin: 0 auto;
     }
 }
 
@@ -295,11 +301,6 @@
 
 
 //===yandex.share_styles===//
-
-.ya-share2 {
-    display: none;
-}
-
 .links {
     bottom: 2%;
     z-index: 10;
@@ -307,7 +308,7 @@
     display: none;
     width: 115px;
 
-    & button {
+    & a {
         background: transparent;
         outline: none;
         border: none;

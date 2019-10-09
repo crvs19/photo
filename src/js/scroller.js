@@ -1,24 +1,24 @@
 $(document).ready(function(){
  
     $(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 100) {
     $('.scrollup').fadeIn();
     } else {
-    $('.scrollup').fadeOut();
+        $('.scrollup').fadeOut();
     }
-    });
+});
 
     $(window).scroll(function(){
         if ($(this).scrollTop() > 3200) {
-        $('.scrollup').addClass('scroller-lock');
+            $('.scrollup').addClass('scroller-lock');
         } else {
-        $('.scrollup').removeClass('scroller-lock');
+            $('.scrollup').removeClass('scroller-lock');
         }
-        });
+    });
      
     $('.scrollup').click(function(){
-    $("html, body").animate({ scrollTop: 0 }, 600);
-    return false;
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
     });
      
     });

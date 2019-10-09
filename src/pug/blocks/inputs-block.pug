@@ -1,7 +1,16 @@
 section.inputs#inputs
     h2.inputs__title Let's work?
-    form.inputs-form(action="")
-        input.inputs-form__name(type="text" placeholder="*Your name" required)
-        input.inputs-form__mail(type="text" placeholder="*Your Email" required)
+    form.inputs-form#inputs-form(action="/" method="post")
+        input.inputs-form__name(type="text" name="name" placeholder="*Your name")
+        input.inputs-form__mail(type="text" name="mail" placeholder="*Your Email")
         textarea.inputs-form__message(type="text" placeholder="Your Messages")
         input.inputs-form__button(type="submit" value="SEND MESSAGE")
+    .inputs-popup#popup-1
+        .inputs-popup__content
+            p.inputs-popup__content__text SUCCESS
+            button.inputs-popup__content__hide OK
+
+    .inputs-popup#popup-2
+        .inputs-popup__content
+            p.inputs-popup__content__text Please fill all the inputs
+            button.inputs-popup__content__hide OK

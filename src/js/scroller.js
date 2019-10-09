@@ -9,7 +9,7 @@ $(document).ready(function(){
 });
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 3200) {
+        if ($(this).scrollTop() > 3400) {
             $('.scrollup').addClass('scroller-lock');
         } else {
             $('.scrollup').removeClass('scroller-lock');

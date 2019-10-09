@@ -42,6 +42,10 @@
         border: 3px solid #404d7c;
         opacity: 0.4;
         border-left: none;
+
+        @media (max-width: 380px) {
+            display: none;
+        }
     }
 
     &__title {

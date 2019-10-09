@@ -29,4 +29,7 @@
             background: #8d939c;
         }
     }
+    @media (max-width: 650px) {
+        display: none;
+    }
 }
